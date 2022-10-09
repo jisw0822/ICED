@@ -46,9 +46,9 @@ void loop() {
     digitalWrite(PIN_LED, 1);      
   } else {    // In desired Range
       if ( distance <= 200 ){
-        analogWrite(PIN_LED, (-2.55 * distance) + 255)
+        analogWrite(PIN_LED, (-2.55 * distance) + 255);
       } else {   
-        analogWrite(PIN_LED, 2.55 * distance)
+        analogWrite(PIN_LED, 2.55 * distance);
       }
       dist_prev = distance;        
   }
